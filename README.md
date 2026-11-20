@@ -2,7 +2,7 @@
 
 Official portfolio website of the **TechOps Department, ACM FAST-NUCES Karachi** (tenure 2026-27). It showcases our work on events, platforms and competitions, including Coders' Cup '26.
 
-**Live site:** https://YOUR-SITE.vercel.app  <!-- replace with the real Vercel link -->
+**Live site:** https://acm-techops-website.vercel.app 
 
 ## What this is
 
