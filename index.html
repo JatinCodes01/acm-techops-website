@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACM FAST TechOps Department</title>
+<meta name="description" content="Official portfolio of the TechOps Department at ACM FAST-NUCES Karachi, including Coders Cup contributions.">
+<meta name="theme-color" content="#070b16">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="bar"></div>
+
+<div id="intro" aria-hidden="true">
+ <div class="slot logo contain ilogo" data-img="acm-logo.png"><span>ACM</span></div>
+ <div class="iletters" id="iletters"></div>
+ <div class="iwords" id="iwords"></div>
+ <div class="iprog"><i></i></div>
+</div>
+
+<div id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+ <button id="lbx" aria-label="Close">&times;</button>
+ <button id="lbp" aria-label="Previous photo">&lsaquo;</button>
+ <figure><img id="lbi" alt=""><figcaption id="lbc"></figcaption></figure>
+ <button id="lbn" aria-label="Next photo">&rsaquo;</button>
+</div>
+
+<header class="top" id="hdr">
+ <div class="wrap nav">
+  <a class="brand" href="#home"><span class="slot logo contain" data-img="acm-logo.png"><span>ACM</span></span><span><b>ACM FAST TechOps</b><small>TechOps Department</small></span></a>
+  <ul id="menuList">
+   <li><a class="l" href="#about">About</a></li><li><a class="l" href="#projects">Projects</a></li>
+   <li><a class="l cc-l" href="#cc">Coders Cup</a></li><li><a class="l" href="#events">Events</a></li>
+   <li><a class="l" href="#gallery">Gallery</a></li><li><a class="l" href="#team">Leadership</a></li>
+   <li><a class="l" href="#achievements">Impact</a></li><li><a class="l" href="#contact">Contact</a></li>
+  </ul>
+  <button class="ib" id="theme" aria-label="Switch light and dark theme"><svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24"><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></svg></button>
+  <button class="ib" id="menu" aria-expanded="false" aria-controls="menuList" aria-label="Open menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+ </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+ <canvas id="net" aria-hidden="true"></canvas>
+ <div class="wrap hgrid">
+  <div>
+   <div class="pills r" style="--i:0"><span class="gp"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5zM6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></svg>ACM FAST-NUCES Karachi</span><span class="gp"><i class="dot"></i>TechOps 2026-27</span></div>
+   <h1 class="r" style="--i:1">TechOps keeps ACM&nbsp;FAST<br><span class="rotw"><span id="rw" class="grad sw">running</span></span></h1>
+   <p class="lead r" style="--i:2">We're the tech team behind ACM FAST at FAST-NUCES Karachi. We get the labs ready, keep our websites and platforms running, and jump in the moment something breaks at an event. Coders Cup is where our members learn by building real things.</p>
+   <div class="btns r" style="--i:3"><a class="btn pri" href="#projects">Explore our work</a><a class="btn" href="#cc">Coders Cup</a><a class="btn" href="#team">Meet the team</a></div>
+  </div>
+  <div class="hr r" style="--i:2">
+   <div class="term" aria-hidden="true"><div class="tp"><i></i><i></i><i></i><span>techops ~ status</span></div><div id="tbody"></div></div>
+   <div class="st3" aria-hidden="true"><span style="--i:0"><i class="dot"></i>Labs ready</span><span style="--i:1"><i class="dot"></i>Platforms live</span><span style="--i:2"><i class="dot"></i>Network stable</span></div>
+   <p class="sr">TechOps is the technical team of ACM FAST-NUCES Karachi. Latest: Coders' Cup '26, 16 to 19 November 2026. Head: Uzair Mustafa. Co-Heads: Ahsan Abbasi and Muhammad Fareed.</p>
+   <div class="fcard f1" data-d="14"><b>16-19 Nov</b><span>Coders' Cup '26 event window</span></div>
+   <div class="orb o1" aria-hidden="true">&lt;/&gt;</div><div class="orb o2" aria-hidden="true">QR</div><div class="orb o3" aria-hidden="true">{ live }</div>
+   <div class="fcard f2" data-d="-16"><b>19 Oct 2026</b><span>Intro session, stage AV</span></div>
+  </div>
+ </div>
+</section>
+
+<div class="marq" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<section id="quote" class="quote"><div class="wrap"><div class="qbox" id="qbox">
+ <span class="qk">A quiet force behind every big moment</span>
+ <span class="qm" aria-hidden="true">&ldquo;</span>
+ <blockquote><p id="qtext">Great events don&rsquo;t just happen.<br>Someone makes them work.</p><cite>The spirit of ACM FAST TechOps</cite></blockquote>
+</div></div></section>
+
+<section id="about"><div class="wrap">
+ <div class="two">
+  <div class="rv">
+   <h2>About TechOps</h2>
+   <p class="lead">We make sure ACM FAST's events, competitions and platforms are ready before the day, steady while it's happening, and packed away neatly afterwards.</p>
+   <p style="color:var(--mut)">TechOps looks after the technical side of ACM FAST: the infrastructure, the software and the hands-on work at events. We work alongside the other ACM departments, never in place of them.</p>
+   <p style="color:var(--mut)">Whether it's an introductory session, a contest or a workshop, we get the hardware ready, keep everything running while it's live, and clean up after. That way speakers, organisers and participants can just enjoy the day.</p>
+  </div>
+  <div class="ba rv" id="ba" aria-label="How TechOps works on an event day"><div class="ba-h"><i class="dot"></i>An event day with TechOps</div><div class="ba-tabs" role="tablist"><button role="tab" aria-selected="true">Before</button><button role="tab" aria-selected="false">During</button><button role="tab" aria-selected="false">After</button></div><div class="ba-bar"><i></i></div><div class="ba-body"><div class="ba-p on" role="tabpanel"><h3>Before the doors open</h3><p>Everything is ready before anyone walks in.</p><ul><li style="--k:0">Labs and workstations checked</li><li style="--k:1">Network and contest environment set up</li><li style="--k:2">Screens and sound tested</li></ul></div><div class="ba-p" role="tabpanel"><h3>While it is live</h3><p>We stay on the floor so the day never pauses.</p><ul><li style="--k:0">Standing by with participants</li><li style="--k:1">Watching the network and servers</li><li style="--k:2">Fixing problems on the spot</li></ul></div><div class="ba-p" role="tabpanel"><h3>When it is over</h3><p>We leave things as we found them.</p><ul><li style="--k:0">Equipment packed up safely</li><li style="--k:1">Labs restored to normal</li><li style="--k:2">Everything handed back tidy</li></ul></div></div></div>
+ </div>
+ <div class="grid3 rv" style="margin-top:44px">
+  <div class="card"><h3>Who we are</h3><p>TechOps is the engineering and operational backbone of ACM NUCES Karachi, whose motto is &ldquo;Where Resilience Meets Innovation&rdquo;. We build platforms, support competitive programming events and help students grow as technologists.</p></div>
+  <div class="card"><h3>What ACM hosts</h3><p>ACM NUCES Karachi runs signature computing events like Coders' Cup and Developers' Day, testing students on algorithmic speed, problem-solving, product ideas and technical resilience.</p></div>
+  <div class="card"><h3>Who we work with</h3><p>We team up with the Technology, Computing, Event Management, Automation, Marketing and Media wings, and with partners like Raqami Islamic Digital Bank, Teknofest Pakistan 4.0 and AI Season.</p></div>
+ </div>
+ <h3 style="margin-top:56px;font-size:1.4rem" class="rv">What we are responsible for</h3>
+ <div class="bento" id="resp"></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+ <div class="sh rv"><h2>Projects and technical work</h2><p class="lead">Things we've built, looked after or helped run for ACM FAST.</p></div>
+ <div class="chips" id="chips" role="group" aria-label="Filter projects"></div>
+ <div class="grid3" id="project-cards"></div>
+</div></section>
+
+<section id="cc"><div class="wrap">
+ <div class="ccp"><div class="wrap">
+  <span class="ccb"><i class="dot"></i>Coders Cup</span>
+  <h2>What Coders cup does for ACM FAST</h2>
+  <p class="lead">Coders cup is the coding side of ACM FAST: sessions, workshops, competitions and learning activities. Everything in this section is Coders Cup's own work, kept separate from other departments.</p>
+  <div class="grid3" id="cc-cards" style="margin-top:30px"></div>
+  <div class="note"><i class="dot"></i><p><strong>Looking for Coders' Cup 2026?</strong> TechOps built its technical setup. See <a href="#events">Events</a> and <a href="#projects">Projects</a>.</p></div>
+  <div class="note"><i class="dot"></i><p><strong>Coders cup leadership</strong> is listed separately in the <a href="#team">Leadership section</a>.</p></div>
+ </div></div>
+</div></section>
+
+<section id="events"><div class="wrap">
+ <div class="sh rv"><h2>Events and activities</h2><p class="lead">From the first session of the year to the big competitions. Tap a step to see what happened and what we did.</p></div>
+ <ol class="flow rv" id="flow" aria-label="How an ACM season runs"></ol>
+ <p class="hint rv"><span class="hand" aria-hidden="true">&#128073;</span> Tap any card to open or close it. The introductory session is already open for you.</p>
+ <ol class="feed" id="event-list"></ol>
+ <div class="spot rv" id="cupjourney">
+  <h2 style="font-size:2rem">Coders' Cup: the whole journey</h2>
+  <p class="lead">From the first round to the trophy. Here is how it unfolds.</p>
+  <ol class="path" id="path"></ol>
+  <h3 style="font-size:1.5rem">Three days in the lab</h3>
+  <div class="seg" role="tablist" aria-label="Coders' Cup days" id="seg"></div>
+  <div id="panels"></div>
+  <h3 style="font-size:1.3rem;margin-top:46px">Partners</h3>
+  <div class="partners" id="partners"></div>
+  <p style="color:var(--mut);margin-top:-6px">In collaboration with Youth Intelligentsia, CEGA and AI Season.</p>
+  <a class="btn pri" href="https://coderscup26.com" target="_blank" rel="noopener">Visit coderscup26.com</a>
+ </div>
+
+ <div class="reg rv" id="reg">
+  <div class="regbox">
+   <h2 style="font-size:2rem">Registration and ticketing, built by TechOps</h2>
+   <p class="lead">For Coders' Cup '26 we built the official event portal, where student teams sign themselves up. It runs on its own, from the first click to the ticket landing in the student's inbox.</p>
+   <div class="tags"><span class="pill hot">Live countdown</span><span class="pill hot">Module overviews</span><span class="pill hot">Multi-track sign-up</span><span class="pill hot">Automatic emails</span><span class="pill hot">QR tickets</span></div>
+   <ol class="rsteps" id="rsteps"></ol>
+   <div class="evimg reg-evimg">
+    <div class="slot" data-img="registration-site.jpg" style="--ar:1901/728"><span><b>Registration website</b>images/registration-site.jpg</span></div>
+    <div class="slot" data-img="ticket-email.jpg" style="--ar:1307/661"><span><b>Ticket email with QR code</b>images/ticket-email.jpg</span></div>
+   </div>
+   <a class="btn pri" style="margin-top:22px" href="https://coderscup26.com" target="_blank" rel="noopener">Open the registration website</a>
+  </div>
+ </div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+ <div class="sh rv"><h2>Photo gallery</h2><p class="lead">Moments from ACM FAST events. Every photo here was taken or made by members of ACM TechOps. Click one to see it bigger.</p></div>
+ <div class="chips" id="gchips" role="group" aria-label="Filter photos"></div>
+ <div class="gal" id="gal"></div>
+</div></section>
+
+<section id="team"><div class="wrap">
+ <div class="sh rv"><h2>Team and leadership</h2><p class="lead">Names and titles follow the official ACM FAST structure.</p></div>
+ <h3 class="group">TechOps leadership</h3><div class="grid3" id="techops-lead"></div>
+ <h3 class="group">ACM NUCES Karachi executive committee</h3><div class="grid3" id="exec-committee"></div>
+ 
+</div></section>
+
+<section id="achievements"><div class="wrap">
+ <div class="sh rv"><h2>Achievements and impact</h2><p class="lead">Only things we can stand behind.</p></div>
+ <div class="grid3 rv" id="stats" style="margin-bottom:24px"></div>
+ <div class="grid3" id="ach-cards"></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+ <div class="cta rv">
+  <h2>Join ACM FAST</h2>
+  <p class="lead">Want to join ACM FAST, get involved with Coders cup or work with TechOps? Say hi on our official channels.</p>
+  <div class="links" id="links"></div>
+ </div>
+</div></section>
+</main>
+
+<button class="totop" id="totop" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<footer><div class="wrap"><span>ACM Student Chapter, FAST-NUCES Karachi, TechOps Department, tenure 2026-27. Official portfolio website.</span><button class="btn" id="replay">Replay intro</button></div></footer>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
